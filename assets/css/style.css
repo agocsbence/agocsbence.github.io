@@ -82,6 +82,20 @@ body {
   color: #f8b608;
 }
 
+section h1 {
+  text-align: center;
+  font-size: 200%;
+  color: #ff9200;
+  line-height: 5;
+}
+section a {
+  text-decoration: underline;
+}
+section a:hover {
+  background: #f8b608;
+  color: #0d0e12 !important;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -130,6 +144,9 @@ footer .container nav ul li:hover a {
   color: #ff9200 !important;
 }
 
+footer {
+  margin-top: 10rem;
+}
 @media screen and (max-width: 991px) {
   footer .container {
     flex-direction: column;
@@ -175,13 +192,6 @@ main #lead .container #intro {
 main #lead .container #intro h2, main #lead .container #intro p {
   margin-bottom: 2rem;
 }
-main #lead .container #intro h2 a, main #lead .container #intro p a {
-  text-decoration: underline;
-}
-main #lead .container #intro h2 a:hover, main #lead .container #intro p a:hover {
-  background: #f8b608;
-  color: #0d0e12 !important;
-}
 main #lead .container #intro h2 {
   font-size: 230%;
   line-height: 3;
@@ -210,14 +220,7 @@ main #lead .container #intro #tech-stack li:after {
 main #lead .container #intro #tech-stack li:last-child:after {
   content: "";
 }
-main #works h1 {
-  text-align: center;
-  font-size: 200%;
-  color: #ff9200;
-  line-height: 5;
-}
 main #works #works-container {
-  margin-bottom: 10rem;
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
@@ -233,10 +236,7 @@ main #works #works-container .work {
   transition: all 0.3s ease;
 }
 main #works #works-container .work:hover {
-  transform: scale(1.1);
-}
-main #works #works-container .work img {
-  border-radius: 0.2rem;
+  transform: scale(1.07);
 }
 main #works #works-container .work h2 {
   font-size: 130%;
@@ -244,6 +244,19 @@ main #works #works-container .work h2 {
 }
 main #works #works-container .work p {
   line-height: 1.2;
+}
+main #works #works-container .work a {
+  text-decoration: none;
+  color: #eea441 !important;
+}
+main #contact {
+  font-size: 160%;
+  line-height: 1.2;
+}
+@media screen and (max-width: 991px) {
+  main #contact {
+    font-size: 120%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

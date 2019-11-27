@@ -48,6 +48,22 @@ body {
     color: $yellow3;
 }
 
+section {
+    h1 {
+        text-align: center;
+        font-size: 200%;
+        color: $yellow2;
+        line-height: 5;
+    }
+    a {
+        text-decoration: underline;
+        &:hover {
+            background: $yellow3;
+            color: $black !important;
+        }
+    }
+}
+
 img { max-width: 100%; height: auto; }
 
 a { color: inherit !important; text-decoration: none; }
@@ -89,6 +105,7 @@ footer {
 }
 
 footer {
+    margin-top: 10rem;
     .container {
         @media screen and (max-width: $mobile) {
             flex-direction: column;
@@ -127,13 +144,6 @@ main {
             }
             h2, p {
                 margin-bottom: 2rem;
-                a {
-                    text-decoration: underline;
-                    &:hover {
-                        background: $yellow3;
-                        color: $black !important;
-                    }
-                }
             }
             h2 {
                 font-size: 230%;
@@ -166,14 +176,7 @@ main {
         }
     }
     #works {
-        h1 {
-            text-align: center;
-            font-size: 200%;
-            color: $yellow2;
-            line-height: 5;
-        }
         #works-container {
-            margin-bottom: 10rem;
             display: grid;
             grid-gap: 2rem;
             grid-template-columns: 1fr 1fr 1fr;
@@ -185,10 +188,7 @@ main {
             .work {
                 transition: all .3s ease;
                 &:hover {
-                    transform: scale(1.1);
-                }
-                img {
-                    border-radius: 0.2rem;
+                    transform: scale(1.07);
                 }
                 h2 {
                     // color: $yellow2;
@@ -198,7 +198,18 @@ main {
                 p {
                     line-height: 1.2;
                 }
+                a {
+                    text-decoration: none;
+                    color: $yellow1 !important;
+                }
             }
+        }
+    }
+    #contact {
+        font-size: 160%;
+        line-height: 1.2;
+        @media screen and (max-width: $mobile) {
+            font-size: 120%;
         }
     }
 }
