@@ -11,3 +11,5 @@ Thank you for your time and consideration. I look forward to speaking with you a
 
 Best regards,
 Bence Agocs
+
+I'm an experienced front-end developer, based in Budapest, Hungary. My core skills are in semantic HTML & CSS, progressively enhanced JS, Wordpress templating, Vue.js & React, static site generation and generally putting the user first. I believe in continuous development and I seek pixel perfect precision. I understand and know how to implement an application - from UX to front-end development, but I prefer focussing my energy on design work and site-building.
