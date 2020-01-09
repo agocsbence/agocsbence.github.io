@@ -77,9 +77,9 @@ html {
 
 body {
   font-size: 15px;
-  background: #333;
   font-family: "MoholySans-Regular";
   color: #f8b608;
+  background: linear-gradient(-45deg, #1a1a1a, #333, #1a1a1a);
 }
 
 section h1 {
@@ -88,10 +88,10 @@ section h1 {
   color: #ff9200;
   line-height: 5;
 }
-section a {
+section p a {
   text-decoration: underline;
 }
-section a:hover {
+section p a:hover {
   background: #f8b608;
   color: #0d0e12 !important;
 }
@@ -109,6 +109,11 @@ a {
 .container {
   max-width: 80vw;
   margin: 0 10vw;
+}
+@media screen and (min-width: 2200px) {
+  .container {
+    margin: 0 30vw;
+  }
 }
 @media screen and (max-width: 991px) {
   .container {
