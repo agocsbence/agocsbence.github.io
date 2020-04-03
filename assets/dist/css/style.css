@@ -78,11 +78,13 @@ section h1 {
   color: #ff9200;
   line-height: 5; }
 
-section p a {
-  text-decoration: underline; }
-  section p a:hover {
-    background: #f8b608;
-    color: #0d0e12 !important; }
+section p {
+  line-height: 1.5; }
+  section p a {
+    text-decoration: underline; }
+    section p a:hover {
+      background: #f8b608;
+      color: #0d0e12 !important; }
 
 img {
   max-width: 100%;
@@ -132,14 +134,16 @@ footer {
       flex-direction: column;
       text-align: center; }
       footer .container nav {
-        margin-top: 2rem; } }
+        margin-top: 2rem; }
+        footer .container nav ul li:first-child {
+          margin-left: 0; } }
 
 main #lead .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2rem; }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 768px) {
     main #lead .container {
       flex-direction: column; } }
   main #lead .container #profile {
@@ -147,10 +151,14 @@ main #lead .container {
     background-image: url("../img/portrait.jpg");
     background-position: center center;
     background-size: cover; }
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 768px) {
       main #lead .container #profile {
         height: 20rem;
-        flex: none; } }
+        flex: none;
+        margin: 0 2rem; } }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      main #lead .container #profile {
+        display: none; } }
   main #lead .container #intro {
     flex: 2;
     padding: 2rem 0 2rem 2rem; }
@@ -178,6 +186,9 @@ main #lead .container {
         content: ' -'; }
       main #lead .container #intro #tech-stack li:last-child:after {
         content: ''; }
+      @media screen and (max-width: 768px) {
+        main #lead .container #intro #tech-stack li {
+          line-height: 1.5; } }
 
 main #works #works-container {
   display: grid;
@@ -195,8 +206,6 @@ main #works #works-container {
     main #works #works-container .work h2 {
       font-size: 130%;
       line-height: 2; }
-    main #works #works-container .work p {
-      line-height: 1.2; }
     main #works #works-container .work a {
       text-decoration: none;
       color: #eea441 !important; }
