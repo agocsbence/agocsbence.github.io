@@ -6,7 +6,7 @@ $black:							#0d0e12;
 $grey:							#333;
 $white:							#fff;
 
-$mobile:                        768px;
+$mobile:                        767px;
 $tablet:                        991px;
 $desktop:                       1440px;
 $desktop-large:                 2200px;
@@ -156,7 +156,8 @@ main {
                 margin: 0 2rem;
             }
             @media screen and (min-width: $mobile) and (max-width: $tablet) {
-                display: none;
+                flex: 1;
+                margin-right: 1rem;
             }
         }
         #intro {
@@ -164,6 +165,10 @@ main {
             padding: 2rem 0 2rem 2rem;
             @media screen and (max-width: $tablet) {
                 padding: 2rem 0;
+            }
+            @media screen and (min-width: $mobile) and (max-width: $tablet) {
+                flex: 1;
+                padding-top: 0;
             }
             h2, p {
                 margin-bottom: 2rem;
@@ -194,7 +199,7 @@ main {
                             content: '';
                         }
                     }
-                    @media screen and (max-width: $mobile) {
+                    @media screen and (max-width: $tablet) {
                         line-height: 1.5;
                     }
                 }
@@ -207,8 +212,12 @@ main {
             grid-gap: 2rem;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto;
-            @media screen and (max-width: $tablet) {
+            @media screen and (max-width: $mobile) {
                 grid-template-columns: 1fr;
+                margin-bottom: 5rem;
+            }
+            @media screen and (min-width: $mobile) and (max-width: $tablet) {
+                grid-template-columns: 1fr 1fr;
                 margin-bottom: 5rem;
             }
             .work {
