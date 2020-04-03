@@ -15,253 +15,194 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent;
-}
+  background: transparent; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
-  content: none;
-}
+  content: '';
+  content: none; }
 
 /* remember to define focus styles! */
 :focus {
-  outline: 0;
-}
+  outline: 0; }
 
 /* remember to highlight inserts somehow! */
 ins {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 del {
-  text-decoration: line-through;
-}
+  text-decoration: line-through; }
 
 /* tables still need 'cellspacing="0"' in the markup */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 @font-face {
   font-family: "MoholySans-Regular";
   font-weight: normal;
-  src: url("fonts/MoholySans-Regular.ttf") format("truetype");
-}
+  src: url("fonts/MoholySans-Regular.ttf") format("truetype"); }
+
 @font-face {
   font-family: "MoholySans-Bold";
   font-weight: bold;
-  src: url("fonts/MoholySans-Bold.ttf") format("truetype");
-}
+  src: url("fonts/MoholySans-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: "MoholySans-Light";
   font-weight: light;
-  src: url("fonts/MoholySans-Light.ttf") format("truetype");
-}
+  src: url("fonts/MoholySans-Light.ttf") format("truetype"); }
+
 html {
-  scroll-behavior: smooth;
-}
+  scroll-behavior: smooth; }
 
 body {
   font-size: 15px;
   font-family: "MoholySans-Regular";
   color: #f8b608;
-  background: linear-gradient(-45deg, #1a1a1a, #333, #1a1a1a);
-}
+  background: linear-gradient(-45deg, #1a1a1a, #333, #1a1a1a); }
 
 section h1 {
   text-align: center;
   font-size: 200%;
   color: #ff9200;
-  line-height: 5;
-}
+  line-height: 5; }
+
 section p a {
-  text-decoration: underline;
-}
-section p a:hover {
-  background: #f8b608;
-  color: #0d0e12 !important;
-}
+  text-decoration: underline; }
+  section p a:hover {
+    background: #f8b608;
+    color: #0d0e12 !important; }
 
 img {
   max-width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 a {
   color: inherit !important;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .container {
   max-width: 80vw;
-  margin: 0 10vw;
-}
-@media screen and (min-width: 2200px) {
-  .container {
-    margin: 0 30vw;
-  }
-}
-@media screen and (max-width: 991px) {
-  .container {
-    max-width: 100vw;
-    margin: 0;
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-  }
-}
+  margin: 0 10vw; }
+  @media screen and (min-width: 2200px) {
+    .container {
+      margin: 0 30vw; } }
+  @media screen and (max-width: 991px) {
+    .container {
+      max-width: 100vw;
+      margin: 0;
+      padding-left: 2rem !important;
+      padding-right: 2rem !important; } }
 
 .logo {
-  font-size: 120%;
-}
+  font-size: 120%; }
 
 header,
 footer {
-  background: #0d0e12;
-}
-header .container,
-footer .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 2rem 0;
-}
-header .container nav ul li,
-footer .container nav ul li {
-  display: inline;
-  margin-left: 1rem;
-}
-header .container nav ul li:hover a,
-footer .container nav ul li:hover a {
-  color: #ff9200 !important;
-}
+  background: #0d0e12; }
+  header .container,
+  footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 0; }
+    header .container nav ul li,
+    footer .container nav ul li {
+      display: inline;
+      margin-left: 1rem; }
+      header .container nav ul li:hover a,
+      footer .container nav ul li:hover a {
+        color: #ff9200 !important; }
 
 footer {
-  margin-top: 10rem;
-}
-@media screen and (max-width: 991px) {
-  footer .container {
-    flex-direction: column;
-    text-align: center;
-  }
-  footer .container nav {
-    margin-top: 2rem;
-  }
-}
+  margin-top: 10rem; }
+  @media screen and (max-width: 991px) {
+    footer .container {
+      flex-direction: column;
+      text-align: center; }
+      footer .container nav {
+        margin-top: 2rem; } }
 
 main #lead .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 2rem;
-}
-@media screen and (max-width: 991px) {
-  main #lead .container {
-    flex-direction: column;
-  }
-}
-main #lead .container #profile {
-  flex: 1;
-  background-image: url("../img/portrait.jpg");
-  background-position: center center;
-  background-size: cover;
-}
-@media screen and (max-width: 991px) {
+  margin-top: 2rem; }
+  @media screen and (max-width: 991px) {
+    main #lead .container {
+      flex-direction: column; } }
   main #lead .container #profile {
-    height: 20rem;
-    flex: none;
-  }
-}
-main #lead .container #intro {
-  flex: 2;
-  padding: 2rem 0 2rem 2rem;
-}
-@media screen and (max-width: 991px) {
+    flex: 1;
+    background-image: url("../img/portrait.jpg");
+    background-position: center center;
+    background-size: cover; }
+    @media screen and (max-width: 991px) {
+      main #lead .container #profile {
+        height: 20rem;
+        flex: none; } }
   main #lead .container #intro {
-    padding: 2rem 0;
-  }
-}
-main #lead .container #intro h2, main #lead .container #intro p {
-  margin-bottom: 2rem;
-}
-main #lead .container #intro h2 {
-  font-size: 230%;
-  line-height: 3;
-  color: #ff9200;
-}
-@media screen and (max-width: 991px) {
-  main #lead .container #intro h2 {
-    font-size: 150%;
-  }
-}
-main #lead .container #intro p {
-  line-height: 1.5;
-  font-size: 160%;
-}
-@media screen and (max-width: 991px) {
-  main #lead .container #intro p {
-    font-size: 120%;
-  }
-}
-main #lead .container #intro #tech-stack li {
-  display: inline;
-}
-main #lead .container #intro #tech-stack li:after {
-  content: " -";
-}
-main #lead .container #intro #tech-stack li:last-child:after {
-  content: "";
-}
+    flex: 2;
+    padding: 2rem 0 2rem 2rem; }
+    @media screen and (max-width: 991px) {
+      main #lead .container #intro {
+        padding: 2rem 0; } }
+    main #lead .container #intro h2, main #lead .container #intro p {
+      margin-bottom: 2rem; }
+    main #lead .container #intro h2 {
+      font-size: 230%;
+      line-height: 3;
+      color: #ff9200; }
+      @media screen and (max-width: 991px) {
+        main #lead .container #intro h2 {
+          font-size: 150%; } }
+    main #lead .container #intro p {
+      line-height: 1.5;
+      font-size: 160%; }
+      @media screen and (max-width: 991px) {
+        main #lead .container #intro p {
+          font-size: 120%; } }
+    main #lead .container #intro #tech-stack li {
+      display: inline; }
+      main #lead .container #intro #tech-stack li:after {
+        content: ' -'; }
+      main #lead .container #intro #tech-stack li:last-child:after {
+        content: ''; }
+
 main #works #works-container {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-}
-@media screen and (max-width: 991px) {
-  main #works #works-container {
-    grid-template-columns: 1fr;
-    margin-bottom: 5rem;
-  }
-}
-main #works #works-container .work {
-  transition: all 0.3s ease;
-}
-main #works #works-container .work:hover {
-  transform: scale(1.07);
-}
-main #works #works-container .work h2 {
-  font-size: 130%;
-  line-height: 2;
-}
-main #works #works-container .work p {
-  line-height: 1.2;
-}
-main #works #works-container .work a {
-  text-decoration: none;
-  color: #eea441 !important;
-}
+  grid-template-rows: auto; }
+  @media screen and (max-width: 991px) {
+    main #works #works-container {
+      grid-template-columns: 1fr;
+      margin-bottom: 5rem; } }
+  main #works #works-container .work {
+    transition: all .3s ease; }
+    main #works #works-container .work:hover {
+      transform: scale(1.07); }
+    main #works #works-container .work h2 {
+      font-size: 130%;
+      line-height: 2; }
+    main #works #works-container .work p {
+      line-height: 1.2; }
+    main #works #works-container .work a {
+      text-decoration: none;
+      color: #eea441 !important; }
+
 main #contact {
   font-size: 160%;
-  line-height: 1.2;
-}
-@media screen and (max-width: 991px) {
-  main #contact {
-    font-size: 120%;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+  line-height: 1.2; }
+  @media screen and (max-width: 991px) {
+    main #contact {
+      font-size: 120%; } }

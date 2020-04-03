@@ -1,0 +1,26 @@
+{
+  "name": "benceagocs",
+  "version": "1.0.0",
+  "description": "portfolio site for myself",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agocsbence/benceagocs.git"
+  },
+  "author": "benceagocs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agocsbence/benceagocs/issues"
+  },
+  "homepage": "https://github.com/agocsbence/benceagocs#readme",
+  "devDependencies": {
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
