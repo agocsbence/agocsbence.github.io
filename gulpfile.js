@@ -1,6 +1,6 @@
-const   gulp = require('gulp'),
-        sass = require('gulp-sass'),
-        imagemin = require('gulp-imagemin');
+const gulp = require('gulp'),
+      sass = require('gulp-sass'),
+      imagemin = require('gulp-imagemin');
  
 sass.compiler = require('node-sass');
  
