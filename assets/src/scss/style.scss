@@ -42,7 +42,7 @@ $desktop-large:                 2200px;
 
 //style
 // * { transition: all .3s ease; }
-html{ scroll-behavior: smooth; }
+html{ scroll-behavior: smooth; background: $yellow3; }
 body {
 	font-size: 15px;
     font-family: "MoholySans-Regular";

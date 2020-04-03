@@ -63,7 +63,8 @@ table {
   src: url("fonts/MoholySans-Light.ttf") format("truetype"); }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  background: #f8b608; }
 
 body {
   font-size: 15px;
