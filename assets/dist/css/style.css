@@ -64,18 +64,18 @@ table {
 
 html {
   scroll-behavior: smooth;
-  background: #f8b608; }
+  background: #f2f2f2; }
 
 body {
   font-size: 15px;
   font-family: "MoholySans-Regular";
-  color: #f8b608;
+  color: #f2f2f2;
   background: linear-gradient(-45deg, #1a1a1a, #333, #1a1a1a); }
 
 section h1 {
   text-align: center;
   font-size: 200%;
-  color: #ff9200;
+  color: #f8b608;
   line-height: 5; }
 
 section p {
@@ -83,7 +83,7 @@ section p {
   section p a {
     text-decoration: underline; }
     section p a:hover {
-      background: #f8b608;
+      background: #f2f2f2;
       color: #0d0e12 !important; }
 
 img {
@@ -125,7 +125,7 @@ footer {
       margin-left: 1rem; }
       header .container nav ul li:hover a,
       footer .container nav ul li:hover a {
-        color: #ff9200 !important; }
+        color: #f8b608 !important; }
 
 footer {
   margin-top: 10rem; }
@@ -175,7 +175,7 @@ main #lead .container {
     main #lead .container #intro h2 {
       font-size: 230%;
       line-height: 3;
-      color: #ff9200; }
+      color: #f8b608; }
       @media screen and (max-width: 991px) {
         main #lead .container #intro h2 {
           font-size: 150%; } }
@@ -215,9 +215,11 @@ main #works #works-container {
     main #works #works-container .work h2 {
       font-size: 130%;
       line-height: 2; }
+    main #works #works-container .work p {
+      color: #f2f2f2; }
     main #works #works-container .work a {
       text-decoration: none;
-      color: #eea441 !important; }
+      color: #f8b608 !important; }
 
 main #contact {
   font-size: 160%;
